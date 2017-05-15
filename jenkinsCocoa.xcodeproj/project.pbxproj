@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0911EB6AD9420CDC73B1E604 /* Pods_jenkinsCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A60D2ED53458C5FA3AD3ED /* Pods_jenkinsCocoa.framework */; };
 		40CE3A541EC92D9600D63846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3A531EC92D9600D63846 /* main.m */; };
 		40CE3A571EC92D9600D63846 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3A561EC92D9600D63846 /* AppDelegate.m */; };
 		40CE3A5A1EC92D9600D63846 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3A591EC92D9600D63846 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4045D6FC1EC933FA0038FF01 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		40CE3A4F1EC92D9600D63846 /* jenkinsCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jenkinsCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE3A531EC92D9600D63846 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40CE3A551EC92D9600D63846 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,9 @@
 		40CE3A731EC92D9700D63846 /* jenkinsCocoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jenkinsCocoaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE3A771EC92D9700D63846 /* jenkinsCocoaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jenkinsCocoaUITests.m; sourceTree = "<group>"; };
 		40CE3A791EC92D9700D63846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64A60D2ED53458C5FA3AD3ED /* Pods_jenkinsCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jenkinsCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FD0A21C45A855357035143 /* Pods-jenkinsCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jenkinsCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-jenkinsCocoa/Pods-jenkinsCocoa.release.xcconfig"; sourceTree = "<group>"; };
+		FE4CDF170257F62E4D506676 /* Pods-jenkinsCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jenkinsCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jenkinsCocoa/Pods-jenkinsCocoa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0911EB6AD9420CDC73B1E604 /* Pods_jenkinsCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		409632BEA701636530BDB702 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE4CDF170257F62E4D506676 /* Pods-jenkinsCocoa.debug.xcconfig */,
+				A5FD0A21C45A855357035143 /* Pods-jenkinsCocoa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		40CE3A461EC92D9600D63846 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,8 @@
 				40CE3A6B1EC92D9700D63846 /* jenkinsCocoaTests */,
 				40CE3A761EC92D9700D63846 /* jenkinsCocoaUITests */,
 				40CE3A501EC92D9600D63846 /* Products */,
+				409632BEA701636530BDB702 /* Pods */,
+				620C66E1D49A0358563BA27D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +134,7 @@
 		40CE3A521EC92D9600D63846 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4045D6FC1EC933FA0038FF01 /* PrefixHeader.pch */,
 				40CE3A531EC92D9600D63846 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +158,14 @@
 			path = jenkinsCocoaUITests;
 			sourceTree = "<group>";
 		};
+		620C66E1D49A0358563BA27D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A60D2ED53458C5FA3AD3ED /* Pods_jenkinsCocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40CE3A7C1EC92D9700D63846 /* Build configuration list for PBXNativeTarget "jenkinsCocoa" */;
 			buildPhases = (
+				6AA9D4DBFBE92F688C2A4BCF /* [CP] Check Pods Manifest.lock */,
 				40CE3A4B1EC92D9600D63846 /* Sources */,
 				40CE3A4C1EC92D9600D63846 /* Frameworks */,
 				40CE3A4D1EC92D9600D63846 /* Resources */,
+				C8E9CD19587CB0BC1577DB3D /* [CP] Embed Pods Frameworks */,
+				EBF59773ADB8D68D02054A30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +299,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AA9D4DBFBE92F688C2A4BCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E9CD19587CB0BC1577DB3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jenkinsCocoa/Pods-jenkinsCocoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF59773ADB8D68D02054A30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jenkinsCocoa/Pods-jenkinsCocoa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40CE3A4B1EC92D9600D63846 /* Sources */ = {
@@ -427,6 +504,7 @@
 		};
 		40CE3A7D1EC92D9700D63846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4CDF170257F62E4D506676 /* Pods-jenkinsCocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2TBL8EXRY;
@@ -434,11 +512,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jff.jenkinsCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "${SRCROOT}/jenkinsCocoa/PrefixHeader.pch";
 			};
 			name = Debug;
 		};
 		40CE3A7E1EC92D9700D63846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5FD0A21C45A855357035143 /* Pods-jenkinsCocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2TBL8EXRY;
@@ -446,6 +526,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jff.jenkinsCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "${SRCROOT}/jenkinsCocoa/PrefixHeader.pch";
 			};
 			name = Release;
 		};
@@ -518,6 +599,7 @@
 				40CE3A7E1EC92D9700D63846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40CE3A7F1EC92D9700D63846 /* Build configuration list for PBXNativeTarget "jenkinsCocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +608,7 @@
 				40CE3A811EC92D9700D63846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40CE3A821EC92D9700D63846 /* Build configuration list for PBXNativeTarget "jenkinsCocoaUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +617,7 @@
 				40CE3A841EC92D9700D63846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
