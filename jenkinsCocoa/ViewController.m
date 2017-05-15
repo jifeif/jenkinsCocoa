@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+//#import <Masonry/Masonry.h>
 
 @interface ViewController ()
+@property (nonatomic, strong) UIView *testView;
 
 @end
 
@@ -16,14 +18,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self configUI];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma -- private method
+- (void)configUI{
+    [self.view addSubview:self.testView];
+    [self configFrame];
 }
+
+#pragma -- load
+- (UIView *)testView{
+    if (!_testView) {
+        _testView = [[UIView alloc] initWithFrame:CGRectZero];
+        _testView.backgroundColor = [UIColor blueColor];
+    }
+    return _testView;
+}
+
+#pragma -- Masnory
+- (void)configFrame{
+    [self.testView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(@100);
+        make.height.mas_equalTo(@100);
+        make.center.equalTo(self.view);
+    }];
+}
+
 
 
 @end

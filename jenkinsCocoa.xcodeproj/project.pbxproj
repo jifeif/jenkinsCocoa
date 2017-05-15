@@ -508,11 +508,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2TBL8EXRY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/jenkinsCocoa/PrefixHeader.pch";
 				INFOPLIST_FILE = jenkinsCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jff.jenkinsCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SHARED_PRECOMPS_DIR = "${SRCROOT}/jenkinsCocoa/PrefixHeader.pch";
+				SHARED_PRECOMPS_DIR = "";
 			};
 			name = Debug;
 		};
@@ -522,11 +524,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2TBL8EXRY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/jenkinsCocoa/PrefixHeader.pch";
 				INFOPLIST_FILE = jenkinsCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jff.jenkinsCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SHARED_PRECOMPS_DIR = "${SRCROOT}/jenkinsCocoa/PrefixHeader.pch";
+				SHARED_PRECOMPS_DIR = "";
 			};
 			name = Release;
 		};
