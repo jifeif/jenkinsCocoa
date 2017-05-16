@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0911EB6AD9420CDC73B1E604 /* Pods_jenkinsCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A60D2ED53458C5FA3AD3ED /* Pods_jenkinsCocoa.framework */; };
-		4045D6FE1EC95AA70038FF01 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4045D6FD1EC95AA70038FF01 /* Property List.plist */; };
+		4045D6FE1EC95AA70038FF01 /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4045D6FD1EC95AA70038FF01 /* PropertyList.plist */; };
 		40CE3A541EC92D9600D63846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3A531EC92D9600D63846 /* main.m */; };
 		40CE3A571EC92D9600D63846 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3A561EC92D9600D63846 /* AppDelegate.m */; };
 		40CE3A5A1EC92D9600D63846 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CE3A591EC92D9600D63846 /* ViewController.m */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		4045D6FC1EC933FA0038FF01 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		4045D6FD1EC95AA70038FF01 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		4045D6FD1EC95AA70038FF01 /* PropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
 		40CE3A4F1EC92D9600D63846 /* jenkinsCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jenkinsCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CE3A531EC92D9600D63846 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40CE3A551EC92D9600D63846 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			children = (
 				4045D6FC1EC933FA0038FF01 /* PrefixHeader.pch */,
 				40CE3A531EC92D9600D63846 /* main.m */,
-				4045D6FD1EC95AA70038FF01 /* Property List.plist */,
+				4045D6FD1EC95AA70038FF01 /* PropertyList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			files = (
 				40CE3A621EC92D9600D63846 /* LaunchScreen.storyboard in Resources */,
 				40CE3A5F1EC92D9600D63846 /* Assets.xcassets in Resources */,
-				4045D6FE1EC95AA70038FF01 /* Property List.plist in Resources */,
+				4045D6FE1EC95AA70038FF01 /* PropertyList.plist in Resources */,
 				40CE3A5D1EC92D9600D63846 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
